@@ -1,0 +1,17 @@
+name: My First Pipeline
+
+on:
+  push:
+    branches:
+      - deploy   # Only run when pushing to 'deploy' branch
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Run Python file
+        run: python hello.py
