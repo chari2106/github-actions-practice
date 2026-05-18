@@ -14,4 +14,4 @@ jobs:
         run: echo "Hello from GitHub Actions!"
 
       - name: Run Python file
-        run: python hello.py
+        run: python app.py
